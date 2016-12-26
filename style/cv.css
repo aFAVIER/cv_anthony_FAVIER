@@ -1,0 +1,22 @@
+/*----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
+MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
+h1{
+	text-align: center; /*centrer Anthony FAVIER*/
+}
+#photo{
+	width: 250px;/*largeur de la photo à 250px*/
+	border-radius: 50%;/*image ronde*/
+	box-shadow: 4px 4px 10px black;/*ombrage de la photo*/
+}
+#gps, #email, #tel{
+	display: flex;/*aligner les images avec texte dans chaque id*/
+}
+
+
+/*----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
+LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----*/
+@media (min-width: 750px){
+h1{
+	color: red;/*test pour la largeur 750px du Mobile First*/
+}
+}
