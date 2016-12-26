@@ -2,17 +2,42 @@
 MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
 h1{
 	text-align: center; /*centrer Anthony FAVIER*/
+	text-shadow: 2px 2px 4px grey;/*ombre du texte*/
+	font-family: sans-serif;/*police du texte h1*/
+	font-size: 2.5em;/*taille écriture*/
 }
 #photo{
+	height: 250px;/*hauteur de la photo à 250px*/
 	width: 250px;/*largeur de la photo à 250px*/
 	border-radius: 50%;/*image ronde*/
 	box-shadow: 4px 4px 10px black;/*ombrage de la photo*/
+	margin-left: 10px;/*marge gauche*/
+	margin-bottom: 10px;/*marge bas*/
 }
 #gps, #email, #tel{
 	display: flex;/*aligner les images avec texte dans chaque id*/
+	justify-content: center;/*centre les éléments sur l'axe des x*/
+	align-items: center;/*centre le texte avec les icons*/
+	margin: 15px; /*petite marge pour écarter de la photo*/
+}
+header{
+	background-color: #fdffbf;/*couleur de fond du header*/
+	border-radius: 20px;/*arrondir les angles du header */
+}
+#header{
+	display: flex;/*positionnement des éléments du header*/
+	align-items: center;/*centrer le texte par rapport a la photo*/
 }
 
-
+#gps img, #email img, #tel img{ /*redimensionnement des icons*/
+	height: 25px;/*hauteur*/
+	width: 25px;/*largeur*/
+}
+header p{
+	margin-left: 5px;/*espace le texte des icons de 5px*/
+	font-family: sans-serif;/*police d'écriture*/
+	font-size: 1.3em;/*taille du texte du header*/
+}
 /*----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
 LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----*/
 @media (min-width: 750px){
