@@ -2,7 +2,8 @@
 MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
 h1{
 	text-align: center; /*centrer Anthony FAVIER*/
-	text-shadow: 2px 2px 4px grey;/*ombre du texte*/
+	text-shadow: 2px 2px 2px white;/*ombre 1 du texte */
+	text-shadow: 4px 4px 4px grey;/*ombre 2 du texte*/
 	font-family: sans-serif;/*police du texte h1*/
 	font-size: 2.5em;/*taille écriture*/
 }
@@ -21,8 +22,14 @@ h1{
 	margin: 15px; /*petite marge pour écarter de la photo*/
 }
 header{
-	background-color: #fdffbf;/*couleur de fond du header*/
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;*/
+	/*background-color: #fdffbf;/*couleur de fond du header*/
+	background-image: url(http://wallpapercave.com/wp/XU3XnUe.jpg);/*insertion d'une image en fond du header*/
 	border-radius: 20px;/*arrondir les angles du header */
+	border: 2px solid black;/*bordure du cadre*/
 }
 #header{
 	display: flex;/*positionnement des éléments du header*/
@@ -34,10 +41,71 @@ header{
 	width: 25px;/*largeur*/
 }
 header p{
+	text-shadow: 1px 1px 2px white;/*ombre du texte*/
 	margin-left: 5px;/*espace le texte des icons de 5px*/
 	font-family: sans-serif;/*police d'écriture*/
 	font-size: 1.3em;/*taille du texte du header*/
 }
+#lang img{
+	width: 50px;/*largeur image 50% de la taille réel*/
+	border-radius: 50%;/*découpage en ovale, car image rectangulaire*/
+	border: 2px solid black;/*bordure*/
+	box-shadow: 2px 2px 4px grey;/*ombrage*/
+}
+#lang{
+	/*position: fixed;*/
+	display: flex;/*permet de changer la position des éléments*/
+	justify-content: center;/*centrer axe des X*/
+	align-items: center;/*centrer axe des Y*/
+	margin-top: -19px;/*remonte les img pour centrer avec la bordure*/
+	/*margin-top: 336px;*/
+}
+#header1{
+	z-index: 1;/**/
+	position: fixed;/*fixé le header pour qu'il reste toujours a l'écran*/
+	top: 0;/*coller le header en haut*/
+	right: 0;/*coller le header a droite*/
+	left: 0;/*coller le header a gauche*/
+}
+body{
+	background-color: #ebebeb;
+}
+content{
+	position: absolute;
+	width: 100%;
+	top: 350px;
+}
+#moi1, #moi2{
+	display: flex;
+	justify-content: center;
+}
+#moi h1{
+	text-align: center;
+	margin-top: 50px;
+}
+#moi p{
+	display: flex;
+	font-size: 1.4em;
+}
+.m1, .m2, .m3{
+	border:2px solid black;
+	box-shadow: 2px 2px 4px black;
+	border-radius: 50%;
+	padding: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: -10px;
+}
+.m1{
+	background-color: #7bb7eb;
+}
+.m2{
+	background-color: #cd9ced;
+}
+.m3{
+	background-color: #8bed92;
+}
+
 /*----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
 LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----*/
 @media (min-width: 750px){
