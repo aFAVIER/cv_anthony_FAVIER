@@ -1,192 +1,224 @@
 /*----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
-MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
+MOBILE-FIRST--------MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
+MOBILE-FIRST--------MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
+MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
 h1{
-	text-align: center; /*centrer Anthony FAVIER*/
-	text-shadow: 4px 4px 4px grey;/*ombre du texte*/
-	font-family: sans-serif;/*police du texte h1*/
-	font-size: 2.5em;/*taille écriture*/
+	text-align: center; /*											centrer Anthony FAVIER*/
+	text-shadow: 4px 4px 4px grey;/*--------------------------------ombre du texte*/
+	font-family: sans-serif;/*										police du texte h1*/
+	font-size: 2.5em;/*---------------------------------------------taille écriture*/
 }
 #photo{
-	height: 250px;/*hauteur de la photo à 250px*/
-	width: 250px;/*largeur de la photo à 250px*/
-	border-radius: 50%;/*image ronde*/
-	box-shadow: 4px 4px 10px black;/*ombrage de la photo*/
-	margin-left: 10px;/*marge gauche*/
-	margin-bottom: 10px;/*marge bas*/
+	height: 250px;/*												hauteur de la photo à 250px*/
+	width: 250px;/*-------------------------------------------------largeur de la photo à 250px*/
+	border-radius: 50%;/*											image ronde*/
+	box-shadow: 4px 4px 10px black;/*-------------------------------ombrage de la photo*/
+	margin-left: 10px;/*											marge gauche*/
+	margin-bottom: 10px;/*------------------------------------------marge bas*/
 }
 #gps, #email, #tel{
-	display: flex;/*aligner les images avec texte dans chaque id*/
-	justify-content: center;/*centre les éléments sur l'axe des x*/
-	align-items: center;/*centre le texte avec les icons*/
-	margin: 15px; /*petite marge pour écarter de la photo*/
+	display: flex;/*												aligner les images avec texte dans chaque id*/
+	justify-content: center;/*--------------------------------------centre les éléments sur l'axe des x*/
+	align-items: center;/*											centre le texte avec les icons*/
+	margin: 15px; /*------------------------------------------------petite marge pour écarter de la photo*/
 }
 header{
 	background-image: url(http://wallpapercave.com/wp/XU3XnUe.jpg);/*insertion d'une image en fond du header*/
-	border-radius: 20px;/*arrondir les angles du header */
-	border: 2px solid black;/*bordure du cadre*/
+	border-radius: 20px;/*											arrondir les angles du header */
+	border: 2px solid black;/*--------------------------------------bordure du cadre*/
 }
 #header{
-	display: flex;/*positionnement des éléments du header*/
-	align-items: center;/*centrer le texte par rapport a la photo*/
+	display: flex;/*------------------------------------------------positionnement des éléments du header*/
+	align-items: center;/*											centrer le texte par rapport a la photo*/
 }
 
-#gps img, #email img, #tel img{ /*redimensionnement des icons*/
-	height: 25px;/*hauteur*/
-	width: 25px;/*largeur*/
+#gps img, #email img, #tel img{ /*----------------------------------redimensionnement des icons*/
+	height: 25px;/*													hauteur*/
+	width: 25px;/*--------------------------------------------------largeur*/
 }
 header p{
-	text-shadow: 1px 1px 2px white;/*ombre du texte*/
-	margin-left: 5px;/*espace le texte des icons de 5px*/
-	font-family: sans-serif;/*police d'écriture*/
-	font-size: 1.3em;/*taille du texte du header*/
+	text-shadow: 1px 1px 2px white;/*								ombre du texte*/
+	margin-left: 5px;/*---------------------------------------------espace le texte des icons de 5px*/
+	font-family: sans-serif;/*										police d'écriture*/
+	font-size: 1.3em;/*---------------------------------------------taille du texte du header*/
 }
 #lang img{
-	width: 50px;/*largeur image 50% de la taille réel*/
-	border-radius: 50%;/*découpage en ovale, car image rectangulaire*/
-	border: 2px solid black;/*bordure*/
-	box-shadow: 2px 2px 4px grey;/*ombrage*/
+	width: 50px;/*--------------------------------------------------largeur image 50% de la taille réel*/
+	border-radius: 50%;/*											découpage en ovale, car image rectangulaire*/
+	border: 2px solid black;/*--------------------------------------bordure*/
+	box-shadow: 2px 2px 4px grey;/*									ombrage*/
 }
 #lang{
 	/*position: fixed;*/
-	display: flex;/*permet de changer la position des éléments*/
-	justify-content: center;/*centrer axe des X*/
-	align-items: center;/*centrer axe des Y*/
-	margin-top: -19px;/*remonte les img pour centrer avec la bordure*/
+	display: flex;/*												permet de changer la position des éléments*/
+	justify-content: center;/*--------------------------------------centrer axe des X*/
+	align-items: center;/*											centrer axe des Y*/
+	margin-top: -19px;/*--------------------------------------------remonte les img pour centrer avec la bordure*/
 	/*margin-top: 336px;*/
 }
 #header1{
-	z-index: 1;/*position en 1er plan*/
-	position: fixed;/*fixé le header pour qu'il reste toujours a l'écran*/
-	top: 0;/*coller le header en haut*/
-	right: 0;/*coller le header a droite*/
-	left: 0;/*coller le header a gauche*/
+	z-index: 1;/*---------------------------------------------------position en 1er plan*/
+	position: fixed;/*												fixé le header pour qu'il reste toujours a l'écran*/
+	top: 0;/*-------------------------------------------------------coller le header en haut*/
+	right: 0;/*														coller le header a droite*/
+	left: 0;/*------------------------------------------------------coller le header a gauche*/
 }
-/*----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----
-BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----BODY----*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----BODY----*/
 body{
 	background-color: #ebebeb;
 }
 content{
-	position: absolute;/*position du block*/
-	width: 100%;/*largeur max du block*/
-	top: 350px;/*position du blok Content par rapport au Header*/
-	/*background-color: #e3f2ff;*/
+	position: absolute;/*-------------------------------------------position du block*/
+	width: 100%;/*													largeur max du block*/
+	top: 350px;/*---------------------------------------------------position du blok Content par rapport au Header*/
 	background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);
+	z-index: -2;
 }
-/*----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----
-Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----Moi----*/
+#opacity{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(255,255,255,0.5);
+	z-index: -1
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----Moi----*/
 #moi1, #moi2{
-	display: flex;
-	justify-content: center;/*centrer axe des X*/
+	display: flex;/*------------------------------------------------comportement*/
+	justify-content: center;/*										centrer axe des X*/
 }
 #moi h1{
-	text-align: center;/*centrer le titre en X*/
-	margin-top: 50px;/*marge du haut*/
+	text-align: center;/*											centrer le titre en X*/
+	margin-top: 50px;/*---------------------------------------------marge du haut*/
 }
 #moi p{
-	display: flex;
-	font-size: 1.4em;/*taille du texte*/
+	display: flex;/*------------------------------------------------comportement*/
+	font-size: 1.4em;/*												taille du texte*/
 }
 .m1, .m2, .m3{
-	border:2px solid black;/*créer une bordure*/
-	box-shadow: 2px 2px 4px black;/*ombrage des bordures*/
-	border-radius: 50%;/*création en ovale car box en rectangle*/
-	padding: 20px;/*augmentation de la taille de box du texte*/
-	margin-right: 10px;/*espacer les box*/
-	margin-left: 10px;/*espacer les box et centrer en augmentant la droite et la gauche*/
-	margin-top: -10px;/*diminution de la marge haute*/
+	border:2px solid black;/*---------------------------------------créer une bordure*/
+	box-shadow: 2px 2px 4px black;/*								ombrage des bordures*/
+	border-radius: 50%;/*-------------------------------------------création en ovale car box en rectangle*/
+	padding: 20px;/*												augmentation de la taille de box du texte*/
+	margin-right: 10px;/*-------------------------------------------espacer les box*/
+	margin-left: 10px;/*											espacer les box et centrer en augmentant la droite et la gauche*/
+	margin-top: -10px;/*--------------------------------------------diminution de la marge haute*/
 }
 .m1{
-	background-color: #7bb7eb;/*couleur de fond*/
+	background-color: #7bb7eb;
 }
 .m2{
-	background-color: #cd9ced;/*couleur de fond*/
+	background-color: #cd9ced;
 }
 .m3{
-	background-color: #8bed92;/*couleur de fond*/
+	background-color: #8bed92;
 }
-/*----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----
-Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----Compétences----*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----Compétences----*/
 #compétences li{
-	font-size: 1.2em;/*taille de texte*/
-	text-shadow: 2px 2px 4px white;/*ombre du texte*/
+	font-size: 1.2em;/*---------------------------------------------taille de texte*/
+	text-shadow: 2px 2px 2px white;/*								ombre du texte*/
+}
+#compétences ul{
+	margin-top: -25px;/*--------------------------------------------reduit la marge entre le titre et les barres de compétences*/
 }
 .comp{
-	display: flex;/*positionnement des éléments*/
-	align-items: center;/*aligne le texte avec la barre*/
+	display: flex;/*------------------------------------------------positionnement des éléments*/
+	align-items: center;/*											aligne le texte avec la barre*/
 }
-#barre_terminal, #barre_Html, #barre_CSS, #barre_JS, 
-#barre_PhP, #barre_MySQL, #barre_Wordpress, #barre_Bootstrap {
-	width: 300px;/*largeur*/
-	height: 10px;/*hauteur*/
-	background-color: #282829;/*couleur de fond*/
-	padding: 4px;/*ajoute une marge intérieur*/
-	border-radius: 16px;/*angles arrondis*/
-	box-shadow: inset 0 1px 2px grey, inset 0 -1px 0 grey;/*ombre*/
+.barre_terminal, .barre_Html, .barre_CSS, .barre_JS, 
+#barre_PhP, #barre_MySQL, #barre_Wordpress, #barre_Bootstrap {/*	barre de fond = 100%--*/
+	width: 300px;/*-------------------------------------------------largeur*/
+	height: 10px;/*													hauteur*/
+	background-color: #282829;/*------------------------------------couleur de fond*/
+	padding: 4px;/*													ajoute une marge intérieur*/
+	border-radius: 16px;/*------------------------------------------angles arrondis*/
+	box-shadow: inset 0 1px 2px grey, inset 0 -1px 0 grey;/*		ombre*/
 }
-#barre_terminal:before, #barre_Html:before, #barre_CSS:before, 
-#barre_JS:before{
+.barre_terminal:before, .barre_Html:before, .barre_CSS:before, 
+.barre_JS:before{/*-------------------------------------------------barre de progression (couleur clair)*/
 	content: '';
-	display: block;/*créer un block avec saut de ligne avant et après*/
-	position: absolute;/*position par rapport au parent*/
-	width: 200px;/*largeur*/
-	height: 10px;/*hauteur*/
-	border-radius: 12px;/*angle arrondis*/
-	box-shadow: inset 0 1px 0 grey, unset 0 -1px 3px grey;/*ombres*/
+	display: block;/*-----------------------------------------------créer un block avec saut de ligne avant et après*/
+	position: absolute;/*											position par rapport au parent*/
+	width: 200px;/*-------------------------------------------------largeur*/
+	height: 10px;/*													hauteur*/
+	border-radius: 12px;/*------------------------------------------angle arrondis*/
+	box-shadow: inset 0 1px 0 grey, unset 0 -1px 3px grey;/*		ombres*/
 }
-#barre_terminal:after, #barre_Html:after, #barre_CSS:after, 
-#barre_JS:after{
-	content: '||||||||||||||||||||||||';/*pour faire les hachures*/
-	display: block;
-	width: 200px;/*largeur*/
-	height: 10px;/*hauteur*/
-	overflow: hidden;/*cache tout ce qui sort du conteneur*/
-	border-radius: 12px;/*coin arrondis*/
-	transform: skewX(-30deg);/*inclinaison du texte*/
-	font: bold 120px/80px sans-serif;
-	letter-spacing: 2px;/*espacement des lettres*/
-	opacity: 0.6;/*opacité*/
+.barre_terminal:after, .barre_Html:after, .barre_CSS:after, 
+.barre_JS:after{/*--------------------------------------------------hachures des barres*/
+	content: '||||||||||||||||||||||||';/*							pour faire les hachures*/
+	display: block;/*-----------------------------------------------comportement*/
+	width: 200px;/*													largeur*/
+	height: 10px;/*-------------------------------------------------hauteur*/
+	overflow: hidden;/*												cache tout ce qui sort du conteneur*/
+	border-radius: 12px;/*------------------------------------------coin arrondis*/
+	transform: skewX(-30deg);/*										inclinaison du texte*/
+	font: bold 120px/80px sans-serif;/*-----------------------------épaisseur des hachures*/
+	letter-spacing: 2px;/*											espacement des lettres*/
+	opacity: 0.6;/*-------------------------------------------------opacité*/
 }
-#barre_terminal:before{	
+.barre_terminal:before{	
 	width: 200px;
 	background-color: #b8b8b8;
 }
-#barre_terminal:after{
+.barre_terminal:after{
 	width: 200px;	
 	color: #828282;
 }
-#barre_Html:before{	
+.barre_Html:before{	
 	width: 200px;
-	background-color: #ff9257;
+	background-color: #FFB258;
 }
-#barre_Html:after{
+.barre_Html:after{
 	width: 200px;	
-	color: #de721f;
+	color: #EA7D00;
 }
-#barre_CSS:before{
+.barre_CSS:before{
 	width: 180px;
 	background-color: #b2dbff;
 }
-#barre_CSS:after{
+.barre_CSS:after{
 	width: 180px;
-	color: #4ca1eb;
+	color: #0764b5;
 }
-#barre_JS:before{
+.barre_JS:before{
 	width: 75px;
 	background-color: #fbff7f;
 }
-#barre_JS:after{
+.barre_JS:after{
 	width: 75px;
-	color: #e6e600;
+	color: #c29200;
 }
-
-
-
-
-
-
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--effet 3d sur les barres de compétences--*/
+.grey:before{
+	background : #edf7ff;
+	background : -moz-linear-gradient(top, #edf7ff, #adadad);
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edf7ff), to(#adadad));
+}
+.orange:before{
+	background :#FFB258;
+	background : -moz-linear-gradient(top,#FFB258, #FF8900);
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFB258), to(#FF8900));
+}
+.blue:before{
+	background :#b2dbff;
+	background : -moz-linear-gradient(top,#b2dbff, #0084f7);
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b2dbff), to(#0084f7));
+}
+.yellow:before{
+	background :#fbff7f;
+	background : -moz-linear-gradient(top,#fbff7f, #ccbb00);
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbff7f), to(#ccbb00));
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--PARCOURS--*/
 
 /*----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
+----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
+----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
 LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----*/
 @media (min-width: 750px){
 h1{
