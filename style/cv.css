@@ -73,14 +73,14 @@ content{
 	width: 100%;/*													largeur max du block*/
 	top: 350px;/*---------------------------------------------------position du blok Content par rapport au Header*/
 	background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);
-	z-index: -2;
+	z-index: -2;/*--------------------------------------------------position en arrière plan*/
 }
 #opacity{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-color: rgba(255,255,255,0.5);
-	z-index: -1
+	height: 100%;/*-------------------------------------------------hauteur pleine page*/
+	width: 100%;/*													largeur pleine page*/
+	position: absolute;/*-------------------------------------------position haut-gauche de base*/
+	background-color: rgba(255,255,255,0.5);/*						filtre blanc avec opacité de 50%*/
+	z-index: -1/*---------------------------------------------------position devant le fond, mais derrière les éléments*/
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----Moi----*/
@@ -126,6 +126,19 @@ content{
 .comp{
 	display: flex;/*------------------------------------------------positionnement des éléments*/
 	align-items: center;/*											aligne le texte avec la barre*/
+	justify-content: center;/*--------------------------------------centre tous le block d'éléments*/
+}
+#esp1{
+	width: 19px;/*--------------------------------------------------div vide pour aligner les barres*/
+}
+#esp2{
+	width: 51px;/*--------------------------------------------------div vide pour aligner les barres*/
+}
+#esp3{
+	width: 58px;/*--------------------------------------------------div vide pour aligner les barres*/
+}
+#esp4{
+	width: 5px;/*---------------------------------------------------div vide pour aligner les barres*/
 }
 .barre_terminal, .barre_Html, .barre_CSS, .barre_JS, 
 #barre_PhP, #barre_MySQL, #barre_Wordpress, #barre_Bootstrap {/*	barre de fond = 100%--*/
@@ -135,6 +148,7 @@ content{
 	padding: 4px;/*													ajoute une marge intérieur*/
 	border-radius: 16px;/*------------------------------------------angles arrondis*/
 	box-shadow: inset 0 1px 2px grey, inset 0 -1px 0 grey;/*		ombre*/
+	margin-left: 15px;
 }
 .barre_terminal:before, .barre_Html:before, .barre_CSS:before, 
 .barre_JS:before{/*-------------------------------------------------barre de progression (couleur clair)*/
@@ -160,12 +174,12 @@ content{
 	opacity: 0.6;/*-------------------------------------------------opacité*/
 }
 .barre_terminal:before{	
-	width: 200px;
-	background-color: #b8b8b8;
+	width: 200px;/*-------------------------------------------------représente mon niveau en terminal*/
+	background-color: #b8b8b8;/*									couleur de fond*/
 }
 .barre_terminal:after{
-	width: 200px;	
-	color: #828282;
+	width: 200px;/*-------------------------------------------------doit être égal au "before"*/	
+	color: #828282;/*												couleur des hachures*/
 }
 .barre_Html:before{	
 	width: 200px;
@@ -213,8 +227,16 @@ content{
 	background : -moz-linear-gradient(top,#fbff7f, #ccbb00);
 	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbff7f), to(#ccbb00));
 }
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--PARCOURS--*/
+
+
+
+
+
+
+
 
 /*----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
 ----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
