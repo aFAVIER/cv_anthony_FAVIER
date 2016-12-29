@@ -53,6 +53,7 @@ header p{
 	display: flex;/*												permet de changer la position des éléments*/
 	justify-content: center;/*--------------------------------------centrer axe des X*/
 	align-items: center;/*											centrer axe des Y*/
+	padding-left: 20px;
 	margin-top: -19px;/*--------------------------------------------remonte les img pour centrer avec la bordure*/
 	/*margin-top: 336px;*/
 }
@@ -66,14 +67,19 @@ header p{
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----BODY----*/
 body{
-	background-color: #ebebeb;
+	background-color: #ebebeb;/*									couleur de fond*/
+	margin: 0;/*----------------------------------------------------marge ext 0*/
 }
 content{
 	position: absolute;/*-------------------------------------------position du block*/
 	width: 100%;/*													largeur max du block*/
 	top: 350px;/*---------------------------------------------------position du blok Content par rapport au Header*/
-	background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);
+	/*background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);*/
+	background-image: url(http://pnge.org/wp-content/uploads/2016/11/1480401933_86_abstract-wallpaper.jpg);
 	z-index: -2;/*--------------------------------------------------position en arrière plan*/
+}
+content h1{
+	margin-top: 60px;
 }
 #opacity{
 	height: 100%;/*-------------------------------------------------hauteur pleine page*/
@@ -174,11 +180,11 @@ content{
 	opacity: 0.6;/*-------------------------------------------------opacité*/
 }
 .barre_terminal:before{	
-	width: 200px;/*-------------------------------------------------représente mon niveau en terminal*/
+	width: 150px;/*-------------------------------------------------représente mon niveau en terminal*/
 	background-color: #b8b8b8;/*									couleur de fond*/
 }
 .barre_terminal:after{
-	width: 200px;/*-------------------------------------------------doit être égal au "before"*/	
+	width: 150px;/*-------------------------------------------------doit être égal au "before"*/	
 	color: #828282;/*												couleur des hachures*/
 }
 .barre_Html:before{	
@@ -230,9 +236,145 @@ content{
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--PARCOURS--*/
+section#timeline{
+	width: 100%;/*												Taille max 100% de la page*/
+	margin: 10px;/*---------------------------------------------marge extérieur 10px*/
+	position: relative;/*										permet de déplacer les éléments*/
+}
+section#timeline:before{
+	content :'';/*----------------------------------------------création de la ligne Timeline*/
+	display: block;
+	position: absolute;/*---------------------------------------position par rapport au parent*/
+	left: 50%;/*												centrer la ligne en X*/
+	top: 0;/*---------------------------------------------------colle la ligne au parent*/
+	margin: 0 0 0 -1px;
+	width: 2px;/*-----------------------------------------------largeur de 2px*/
+	height: 100%;/*												hauteur 100%*/
+	background:rgba(0, 0, 0, 1);/*------------------------------couleur de la ligne*/
+}
+section#timeline article{/*-------------------------------------comportement des box*/
+	margin: 0 0 20px 0;/*										marge bas de 20px entre chaque article*/
+	position: relative;/*										permet de bouger les éléments sans contrainte*/
+}
+section#timeline article:after{/*-------------------------------permet de garder l'espace 1 box sur 2*/
+	content: '';/*												intérieur vide*/
+	display: block;/*-------------------------------------------effet block*/
+	clear: both;/*												pour être sur que le block se mets en dessous des autres*/
+}
+section#timeline article div.inner{/*---------------------------largeur des cases*/
+	width: 250px;												
+}
+section#timeline article div.inner span.date{/*-----------------élément date*/
+	display: block;
+	width: 60px;/*----------------------------------------------largeur*/
+	height: 50px;/*												hauteur*/
+	padding: 5px 0;/*-------------------------------------------marge inté 5px(haut/bas) 0(doite/gauche)*/
+	position: absolute;/*										position par rapport au parent*/
+	top: 0;/*---------------------------------------------------marge ext haut à 0*/
+	left: 50%;/*												marge ext gauche 50%*/
+	margin: 0 0 0 -32px;/*--------------------------------------marge ext H D B G*/
+	border-radius: 100%;/*										forme ronde (ou 50%)*/
+	font-size: 12px;/*------------------------------------------taille police écriture*/
+	font-weight: 900;/*											épaisseur du texte*/
+	text-transform: uppercase;/*--------------------------------texte en majuscule*/
+	background: #999999;/*										couleur de fond*/
+	color: rgba(255, 255, 255, 1);/*----------------------------couleur du texte*/
+	border: 2px solid rgba(255, 255, 255, 0.2);/*				bordure (taille / couleur)*/
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);/*-------------------ombre cercle*/
+	text-shadow: 1px 1px 2px black;/*							ombre texte*/
+}
+section#timeline article div.inner span.date span{
+	display: block;
+	text-align: center;/*---------------------------------------centrer le texte*/
+}
+section#timeline article div.inner span.date span.année{
+	font-size: 18px;/*------------------------------------------taille du texte*/
+}
+section#timeline article div.inner span.date span.année_fin{
+	font-size: 18px;/*------------------------------------------taille du texte*/
+}
+section#timeline article div.inner h4{
+	padding: 15px;/*--------------------------------------------marges int à 15px*/
+	margin: 0;/*												marges ext à 0*/
+	color: #FFF;/*----------------------------------------------couleur du texte */
+	font-size: 20px;/*											taille du texte*/
+	text-transform: uppercase;/*--------------------------------écriture en MAJ*/
+	letter-spacing: -1px;/*										espace entre les lettres*/
+	border-radius: 6px 6px 0 0;/*-------------------------------congé HG / HD de 6px*/
+	position: relative;/*										comportement*/
+	text-shadow: 1px 1px 2px black;/*---------------------------ombre du texte*/
+}
+section#timeline article div.inner h4:after{/*------------------création du petit triangle (angle d'un carré à 45°*/
+	content: '';/*												box vide*/
+	position: absolute;/*---------------------------------------position par rapport au parent*/
+	top: 20px;/*												20px du haut*/
+	right: -5px;/*----------------------------------------------rentré de 5px dans la case*/
+	width: 10px;/*												largeur 10px*/
+	height: 10px;/*	--------------------------------------------hauteur 10px*/
+	-webkit-transform: rotate(-45deg);/*						rotation de -45°*/
+}
+section#timeline article div.inner p{
+	padding: 15px;/*--------------------------------------------marges intérieur*/
+	margin: 0;/*												marges ext*/
+	font-size: 14px;/*------------------------------------------taille police*/
+	background: #FFF;/*											couleur de fond*/
+	color: #656565;/*-------------------------------------------couleur de la police*/
+	border-radius: 0 0 6px 6px;/*								congé BD / BG de 6px*/
+}
+section#timeline article:nth-child(2n+2) div.inner{/*flottant a droite d'un enfant sur 2*/
+	float: right;
+}
+section#timeline article:nth-child(2n+2) div.inner h4:after{
+	left: -5px;
+}
+section#timeline article:nth-child(1) div.inner h4{/*couleur de fond de l'enfant 1*/
+	background: #7bb7eb;
+}
+section#timeline article:nth-child(1) div.inner h4:after{
+	background: #7bb7eb;
+}
+section#timeline article:nth-child(2) div.inner h4{/*couleur de fond de l'enfant 2*/
+	background: #cd9ced;
+}
+section#timeline article:nth-child(2) div.inner h4:after{
+	background: #cd9ced;
+}
+section#timeline article:nth-child(3) div.inner h4{/*couleur de fond de l'enfant 3*/
+	background: #8bed92;
+}
+section#timeline article:nth-child(3) div.inner h4:after{
+	background: #8bed92;
+}
+section#timeline article:nth-child(4) div.inner h4{/*couleur de fond de l'enfant 4*/
+	background: #7bb7eb;
+}
+section#timeline article:nth-child(4) div.inner h4:after{
+	background: #7bb7eb;
+}
+section#timeline article:nth-child(5) div.inner h4{/*couleur de fond de l'enfant 5*/
+	background: #cd9ced;
+}
+section#timeline article:nth-child(5) div.inner h4:after{
+	background: #cd9ced;
+}
+section#timeline article:nth-child(6) div.inner h4{/*couleur de fond de l'enfant 6*/
+	background: #8bed92;
+}
+section#timeline article:nth-child(6) div.inner h4:after{
+	background: #8bed92;
+}
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--LOGICIELS--------HOBBIES*/
 
-
+#Logiciels #logic, #hobbies{
+	display: flex;
+	justify-content: center;
+}
+.logi{
+	margin-right: 10px;
+	margin-left: 10px;
+}
 
 
 
