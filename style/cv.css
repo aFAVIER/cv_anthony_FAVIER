@@ -81,55 +81,143 @@ header p{
 	stroke: #d10000;/*												couleur contour*/
 	animation-name:triangle1;/*-------------------------------------creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;/*							répétition infini*/
-	animation-duration: 10s;/*--------------------------------------temps de l'animation*/
+	animation-duration: 4s;/*--------------------------------------temps de l'animation*/
 }
 #triangle2{
 	fill: #207ac9;/*------------------------------------------------couleur fond*/
 	animation-name:triangle2;/*										creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;
-	animation-duration: 10s;
+	animation-duration: 4s;
 }
 #triangle3{
 	fill: #207ac9;/*------------------------------------------------couleur fond*/
 	animation-name:triangle3;/*										creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini*/
-	animation-duration: 10s;/*										temps de l'animation*/
+	animation-duration: 4s;/*										temps de l'animation*/
 }
 #carré{
 	fill: #f0d105;/*------------------------------------------------couleur fond*/
 	animation-name:carré;/*											creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini*/
-	animation-duration: 10s;/*										temps de l'animation*/
+	animation-duration: 4s;/*										temps de l'animation*/
 }
 #triangle4{
 	fill: #02bd53;/*------------------------------------------------couleur fond*/
 	animation-name:triangle4;/*										creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini*/
-	animation-duration: 10s;/*										temps de l'animation*/
+	animation-duration: 4s;/*										temps de l'animation*/
 }
 #triangle5{
 	fill: #af09e6;/*------------------------------------------------couleur fond*/
 	animation-name:triangle5;/*										creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini*/
-	animation-duration: 10s;/*										temps de l'animation*/
+	animation-duration: 4s;/*										temps de l'animation*/
 }
 #trapèze{
 	fill: #707070;/*------------------------------------------------couleur fond*/
 	animation-name:trapèze;/*										creation nom pour animation avec keyframes*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini*/
-	animation-duration: 10s;/*										temps de l'animation*/
+	animation-duration: 4s;/*										temps de l'animation*/
 }
 
-@keyframes triangle1{
+/*---Anim-Tangram---Anim-Tangram---Anim-Tangram---Anim-Tangram---Anim-Tangram---Anim-Tangram---Anim-Tangram---*/
+
+@keyframes triangle1{/*---------------------------------------------animation du svg*/
 	0%{
-		transform: rotateZ();
+		transform: rotateZ(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	80%{
+		
+		transform: rotateZ(45deg) translateX(120px) translateY(-99px);/*position à T=3s*/
 	}
 	100%{
-		transform: rotateZ();
+		transform: rotateZ(45deg) translateX(120px) translateY(-99px);/*position à T=4s*/
 	}
 }
-
-
+@keyframes triangle2{/*---------------------------------------------animation du svg*/
+	0%{
+		transform: rotateZ(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	
+	80%{
+		transform-origin: bottom left;
+		transform: rotateZ(315deg) translateX(33px) translateY(10px);/*position à T=3s*/
+	}
+	100%{
+		transform-origin: bottom left;
+		transform: rotateZ(315deg) translateX(33px) translateY(10px);/*position à T=4s*/
+	}
+}
+@keyframes triangle3{/*---------------------------------------------animation du svg*/
+	0%{
+		transform: rotateZ(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	
+	80%{
+		transform-origin: bottom left;
+		transform: rotateZ(0) translateX(18px) translateY(-1px);/*position à T=3s*/
+	}
+	100%{
+		transform-origin: bottom left;
+		transform: rotateZ(0) translateX(18px) translateY(-1px);/*position à T=4s*/
+	}
+}
+@keyframes trapèze{/*---------------------------------------------animation du svg*/
+	0%{
+		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	
+	80%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(45deg) translateX(-41px) translateY(40px);/*position à T=3s*/
+	}
+	100%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(45deg) translateX(-41px) translateY(40px);/*position à T=4s*/
+	}
+}
+@keyframes carré{/*---------------------------------------------animation du svg*/
+	0%{
+		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	
+	80%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(0deg) translateX(18px) translateY(-2px);/*position à T=3s*/
+	}
+	100%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(0deg) translateX(18px) translateY(-2px);/*position à T=4s*/
+	}
+}
+@keyframes triangle4{/*---------------------------------------------animation du svg*/
+	0%{
+		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	
+	80%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(180deg) translateX(-16px) translateY(31px);/*position à T=3s*/
+	}
+	100%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(180deg) translateX(-16px) translateY(31px);/*position à T=4s*/
+	}
+}
+@keyframes triangle5{/*---------------------------------------------animation du svg*/
+	0%{
+		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*			position à T=0s*/
+	}
+	
+	80%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(-180deg) translateX(-50px) translateY(31px);/*position à T=3s*/
+	}
+	100%{
+		transform-origin: bottom left;
+		transform: rotateX(0deg) rotateZ(-180deg) translateX(-50px) translateY(31px);/*position à T=4s*/
+	}
+}
 /*---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---*/
 
 content{
