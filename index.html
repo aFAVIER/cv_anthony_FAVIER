@@ -2,6 +2,9 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
+	<meta name="description" content="Mon cv">
+	<meta name="keyword" content="cv anthony favier developpeur codeur">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style/cv.css">
 	<title>Curriculum Vitae Anthony FAVIER</title>
 	<link href="img/icon.png" rel="shortcup icon">
@@ -9,6 +12,7 @@
 <body>
 	<div id="header1">
 		<header>
+
 			<h1>Anthony FAVIER</h1>
 			<div id="header">
 				<img id="photo" src="img/photo.jpg">
@@ -27,14 +31,28 @@
 					</div>
 				</div>
 			</div>
+			<figure id="tangram">
+				<svg width="200" height='200' viewBox="0 0 200 200">
+				<path id="triangle1" d='M73 182 h43 v-43Z '/>
+				<path id="triangle2" d='M60 195 h43 v-43Z '/>
+				<path id="triangle3" d='M80 100 h30 v30Z '/>
+				</svg>
+			</figure>
 		</header>
 		<div id="lang">
-			<img src="img/fr.png">
-			<img src="img/ang.png">
+			<img id="frL" src="img/fr.png">
+			<img id="angL" src="img/ang.png">
 		</div>
 	</div>
 	<content>
-	<div id="opacity"></div>
+		<div id="opacity"></div>
+
+	<div id="contenue">
+<!--		<div class="pacman">
+			<div class="pacman-top"></div>
+			<div class="pacman-bottom"></div>
+			<div class="feed"></div>
+		</div>-->
 		<div id="moi">
 			<h1>A propos de moi</h1>
 			<div id="moi1">
@@ -49,6 +67,32 @@
 				<p class="m2">Perfectionniste</p>
 			</div>
 		</div>
+<!--	<div class='svg'>
+			<svg  width='420px' height='60px' viewbox='0 0 360 30'>
+						<!--PACKMAN-->
+<!--			<circle class='packman' cx='32' cy='15' r='15' fill='yellow' stroke='black'/>
+				<circle class='packman' cx='' />
+				<path d='' />
+						<!--les Miam Miam-->
+<!--			<circle id='c1' cx='40' cy='15' r='5' fill='yellow' />
+				<circle id='c2' cx='60' cy='15' r='5' fill='yellow' />
+				<circle id='c3' cx='80' cy='15' r='5' fill='yellow' />
+				<circle id='c4' cx='100' cy='15' r='5' fill='yellow' />
+				<circle id='c5' cx='120' cy='15' r='5' fill='yellow' />
+				<circle id='c6' cx='140' cy='15' r='5' fill='yellow' />
+				<circle id='c7' cx='160' cy='15' r='5' fill='yellow' />
+				<circle id='c8' cx='180' cy='15' r='5' fill='yellow' />
+				<circle id='c9' cx='200' cy='15' r='5' fill='yellow' />
+				<circle id='c10' cx='220' cy='15' r='5' fill='yellow' />
+				<circle id='c11' cx='240' cy='15' r='5' fill='yellow' />
+				<circle id='c12' cx='260' cy='15' r='5' fill='yellow' />
+				<circle id='c13' cx='280' cy='15' r='5' fill='yellow' />
+				<circle id='c14' cx='300' cy='15' r='5' fill='yellow' />
+				<circle id='c15' cx='320' cy='15' r='5' fill='yellow' />
+				<circle id='c16' cx='340' cy='15' r='5' fill='yellow' />
+			</svg>
+		</div>                                                                       -->
+		
 		<div id="compétences">
 			<h1>Compétences Web</h1>
 			<ul><strong>
@@ -92,6 +136,7 @@
 	-->
 			</ul>
 		</div>
+		
 		<div id="Parcours">
 			<h1>Mon parcours</h1>
 			<section id="timeline">
@@ -107,8 +152,7 @@
 				<article>
 					<div class="inner">
 						<span class="date">
-							<span class="année">2010</span>
-							<span class="année_fin">2011</span>
+							<span class="année">2010<br>2011</span>
 						</span>
 						<h4>BTS ATI</h4>
 						<p>BTS ATI, au lycée de Presles 03300 Cusset</p>
@@ -119,8 +163,7 @@
 				<article>
 					<div class="inner">
 						<span class="date">
-							<span class="année">2014</span>
-							<span class="année_fin">2015</span>
+							<span class="année">2014<br>2015</span>
 						</span>
 						<h4>Conducteur d'engins</h4>
 						<p>Contournement de Vichy (route 719)</p>
@@ -142,8 +185,7 @@
 				<article>
 					<div class="inner">
 						<span class="date">
-							<span class="année">2016</span>
-							<span class="année_fin">2017</span>
+							<span class="année">2016<br>2017</span>
 						</span>
 						<h4>Formation Développeur - Codeur Web</h4>
 						<p>Avec Face Bourbonnais dans l'établissement ESPE Moulins</p>
@@ -151,6 +193,7 @@
 				</article>
 			</section>
 		</div>
+	
 		<div id="Logiciels">
 			<h1>Logiciels</h1>
 				<div id="logic">
@@ -176,6 +219,7 @@
 					</div>
 				</div>
 		</div>
+	
 		<div id="interet">
 			<h1>Centre d'intérêt</h1>
 			<div id="hobbies">
@@ -205,6 +249,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</content>
 <script type="text/javascript" rel="script/cv.js"></script>
 </body>

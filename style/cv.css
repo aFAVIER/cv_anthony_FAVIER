@@ -2,6 +2,26 @@
 MOBILE-FIRST--------MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
 MOBILE-FIRST--------MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
 MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
+body{
+	background-color: #ebebeb;/*									couleur de fond*/
+	margin: 0;/*----------------------------------------------------marge ext 0*/
+}
+#header1{
+	z-index: 1;/*---------------------------------------------------position en 1er plan*/
+	position: fixed;/*												fixé le header pour qu'il reste toujours a l'écran*/
+	top: 0;/*-------------------------------------------------------coller le header en haut*/
+	right: 0;/*														coller le header a droite*/
+	left: 0;/*------------------------------------------------------coller le header a gauche*/
+}
+header{
+	background-image: url(http://wallpapercave.com/wp/XU3XnUe.jpg);/*insertion d'une image en fond du header*/
+	border-radius: 0 0 20px 20px;/*									arrondir les angles BD et BG du header */
+	border: 2px solid black;/*--------------------------------------bordure du cadre*/
+}
+#header{
+	display: flex;/*------------------------------------------------positionnement des éléments du header*/
+	align-items: center;/*											centrer le texte par rapport a la photo*/
+}
 h1{
 	text-align: center; /*											centrer Anthony FAVIER*/
 	text-shadow: 4px 4px 4px grey;/*--------------------------------ombre du texte*/
@@ -21,15 +41,6 @@ h1{
 	justify-content: center;/*--------------------------------------centre les éléments sur l'axe des x*/
 	align-items: center;/*											centre le texte avec les icons*/
 	margin: 15px; /*------------------------------------------------petite marge pour écarter de la photo*/
-}
-header{
-	background-image: url(http://wallpapercave.com/wp/XU3XnUe.jpg);/*insertion d'une image en fond du header*/
-	border-radius: 20px;/*											arrondir les angles du header */
-	border: 2px solid black;/*--------------------------------------bordure du cadre*/
-}
-#header{
-	display: flex;/*------------------------------------------------positionnement des éléments du header*/
-	align-items: center;/*											centrer le texte par rapport a la photo*/
 }
 
 #gps img, #email img, #tel img{ /*----------------------------------redimensionnement des icons*/
@@ -53,29 +64,46 @@ header p{
 	display: flex;/*												permet de changer la position des éléments*/
 	justify-content: center;/*--------------------------------------centrer axe des X*/
 	align-items: center;/*											centrer axe des Y*/
-	padding-left: 20px;
 	margin-top: -19px;/*--------------------------------------------remonte les img pour centrer avec la bordure*/
 	/*margin-top: 336px;*/
 }
-#header1{
-	z-index: 1;/*---------------------------------------------------position en 1er plan*/
-	position: fixed;/*												fixé le header pour qu'il reste toujours a l'écran*/
-	top: 0;/*-------------------------------------------------------coller le header en haut*/
-	right: 0;/*														coller le header a droite*/
-	left: 0;/*------------------------------------------------------coller le header a gauche*/
+
+#tangram{
+	position: relative;
+	float: right;
+	top: -200px;
+	right: -50px;
 }
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----BODY----*/
-body{
-	background-color: #ebebeb;/*									couleur de fond*/
-	margin: 0;/*----------------------------------------------------marge ext 0*/
+/*---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---*/
+
+#triangle1{
+	fill: #ff000d; 
+	stroke: #d10000;
+	transform: rotateZ(-45deg);
+	transform: translateY(px);
+	transform: translateX(-100px);
+	animation-name:triangle1;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
 }
+@keyframes triangle1{
+	0%{
+		transform: rotateZ();
+	}
+	100%{
+		transform: rotateZ();
+	}
+}
+
+
+/*---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---*/
+
 content{
 	position: absolute;/*-------------------------------------------position du block*/
 	width: 100%;/*													largeur max du block*/
 	top: 350px;/*---------------------------------------------------position du blok Content par rapport au Header*/
-	/*background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);*/
-	background-image: url(http://pnge.org/wp-content/uploads/2016/11/1480401933_86_abstract-wallpaper.jpg);
+	background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);
+	background-attachment: fixed;/*---------------------------------empêche l'arrière plan de bouger lors du scroll*/
 	z-index: -2;/*--------------------------------------------------position en arrière plan*/
 }
 content h1{
@@ -88,8 +116,9 @@ content h1{
 	background-color: rgba(255,255,255,0.5);/*						filtre blanc avec opacité de 50%*/
 	z-index: -1/*---------------------------------------------------position devant le fond, mais derrière les éléments*/
 }
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----Moi----*/
+
+/*---MOI---MOI---MOI---MOI---MOI---MOI---MOI---MOI---MOI---MOI---MOI---MOI---MOI---*/
+
 #moi1, #moi2{
 	display: flex;/*------------------------------------------------comportement*/
 	justify-content: center;/*										centrer axe des X*/
@@ -120,7 +149,147 @@ content h1{
 .m3{
 	background-color: #8bed92;
 }
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------ANIMATION----------------------------------------------------------*/
+
+
+
+/*---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+.pacman{
+  margin:40px 10px;
+}
+
+.pacman-top{
+	background-color:yellow;
+	height:25px;
+	width:50px;
+	border-radius:100px 100px 0 0;
+	animation: spin1 0.5s infinite linear;
+}
+
+.pacman-bottom{
+	background-color:yellow;
+	height:25px;
+	width:50px;
+	border-radius:0 0 100px 100px;
+	animation: spin2 0.5s infinite linear;
+}
+
+
+.feed {
+margin-top: -95px;
+margin-left:15px;
+width: 10px;
+height: 10px;
+border-radius: 30%;
+-moz-animation: eat 1s linear 0s infinite;
+-webkit-animation: eat 1s linear 0s infinite;
+animation: eat 1s linear 0s infinite;
+}   
+
+/* Animation*/
+
+@keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-35deg);}
+  
+}
+@keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@-moz-keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-35deg);}
+  
+}
+@-moz-keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@-webkit-keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50%{transform: rotate(-35deg);}
+  
+}
+@-webkit-keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50%{transform: rotate(35deg);}	
+}
+
+@keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;
+     }
+  
+100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;}
+}
+}
+
+
+@-moz-keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;}
+}
+}
+
+
+@-webkit-keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;}
+}
+}
+
+/*-------------------------------------------COMPETENCES---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----Compétences----*/
 #compétences li{
 	font-size: 1.2em;/*---------------------------------------------taille de texte*/
@@ -165,6 +334,7 @@ content h1{
 	height: 10px;/*													hauteur*/
 	border-radius: 12px;/*------------------------------------------angle arrondis*/
 	box-shadow: inset 0 1px 0 grey, unset 0 -1px 3px grey;/*		ombres*/
+	
 }
 .barre_terminal:after, .barre_Html:after, .barre_CSS:after, 
 .barre_JS:after{/*--------------------------------------------------hachures des barres*/
@@ -178,40 +348,67 @@ content h1{
 	font: bold 120px/80px sans-serif;/*-----------------------------épaisseur des hachures*/
 	letter-spacing: 2px;/*											espacement des lettres*/
 	opacity: 0.6;/*-------------------------------------------------opacité*/
+	animation-name: hach;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_terminal:before{	
 	width: 150px;/*-------------------------------------------------représente mon niveau en terminal*/
 	background-color: #b8b8b8;/*									couleur de fond*/
+	animation-name: ;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_terminal:after{
 	width: 150px;/*-------------------------------------------------doit être égal au "before"*/	
 	color: #828282;/*												couleur des hachures*/
+	animation-name: terminalB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_Html:before{	
 	width: 200px;
 	background-color: #FFB258;
+	animation-name: htmlB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_Html:after{
 	width: 200px;	
 	color: #EA7D00;
+	animation-name: htmlB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_CSS:before{
 	width: 180px;
 	background-color: #b2dbff;
+	animation-name: cssB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_CSS:after{
 	width: 180px;
 	color: #0764b5;
+	animation-name: cssB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_JS:before{
 	width: 75px;
 	background-color: #fbff7f;
+	animation-name: jsB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 .barre_JS:after{
 	width: 75px;
 	color: #c29200;
+	animation-name: jsB;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------EFFET-3D-COMPETENCES-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*--effet 3d sur les barres de compétences--*/
 .grey:before{
 	background : #edf7ff;
@@ -234,11 +431,63 @@ content h1{
 	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbff7f), to(#ccbb00));
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--Anime Barres--Anime Barres--Anime Barres--Anime Barres--Anime Barres--Anime Barres--Anime Barres--Anime Barres--*/
+
+
+
+@keyframes terminalB{
+	0%{
+		/*width: 0;*/
+		transform: rotateY(0deg);
+	}
+	50%{
+		/*width: 150px;*/
+		transform: rotateY(360deg);
+	}
+	100%{
+		/*width: 0;*/
+		transform: rotateY(0deg);
+	}
+}
+@keyframes {
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 200px;
+	}
+	100%{
+		width: 0%;
+	}
+}
+@keyframes cssB{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 180px;
+	}
+	/*100%{
+		width: 0%;
+	}*/
+}
+@keyframes jsB{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 75px;
+	}
+	100%{
+		width: 0%;
+	}
+}
+/*--fin--anim--*/
+
+/*------------------------------------------------PARCOURS------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--PARCOURS--*/
 section#timeline{
 	width: 100%;/*												Taille max 100% de la page*/
-	margin: 10px;/*---------------------------------------------marge extérieur 10px*/
 	position: relative;/*										permet de déplacer les éléments*/
 }
 section#timeline:before{
@@ -262,7 +511,9 @@ section#timeline article:after{/*-------------------------------permet de garder
 	clear: both;/*												pour être sur que le block se mets en dessous des autres*/
 }
 section#timeline article div.inner{/*---------------------------largeur des cases*/
-	width: 250px;												
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 20px;												
 }
 section#timeline article div.inner span.date{/*-----------------élément date*/
 	display: block;
@@ -286,6 +537,7 @@ section#timeline article div.inner span.date{/*-----------------élément date*/
 section#timeline article div.inner span.date span{
 	display: block;
 	text-align: center;/*---------------------------------------centrer le texte*/
+	/*transform: translateY(15%);/*								deplace le texte pour le centrer en Y*/
 }
 section#timeline article div.inner span.date span.année{
 	font-size: 18px;/*------------------------------------------taille du texte*/
@@ -364,8 +616,7 @@ section#timeline article:nth-child(6) div.inner h4:after{
 	background: #8bed92;
 }
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--LOGICIELS--------HOBBIES*/
+/*------------------------------------------LOGICIELS--------HOBBIES--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #Logiciels #logic, #hobbies{
 	display: flex;
@@ -375,8 +626,12 @@ section#timeline article:nth-child(6) div.inner h4:after{
 	margin-right: 10px;
 	margin-left: 10px;
 }
-
-
+#Logiciels p{
+	text-shadow: 1px 1px 2px grey;
+}
+#hobbies p{
+	text-shadow: 1px 1px 2px grey;
+}
 
 
 
@@ -385,6 +640,26 @@ section#timeline article:nth-child(6) div.inner h4:after{
 ----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
 LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----*/
 @media (min-width: 750px){
+
+
+
+
+
+/*////////*/	
+#photo{
+	height: 200px;
+	width: 200px;
+	border-radius: 20px;
+}
+#header1{
+	width: 750px;
+	height: 250px;
+}
+
+#contenue{
+	display: flex;
+}
+
 h1{
 	color: red;/*test pour la largeur 750px du Mobile First*/
 }
