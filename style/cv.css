@@ -68,24 +68,58 @@ header p{
 	/*margin-top: 336px;*/
 }
 
-#tangram{
-	position: relative;
-	float: right;
-	top: -200px;
-	right: -50px;
+#tangram{/*---------------------------------------------------------image en svg*/
+	position: relative;/*											comportement de la box*/
+	float: right;/*-------------------------------------------------comportement et positionnement*/
+	top: -215px;/*													position en haut*/
+	right: -70px;/*-------------------------------------------------position à droite*/
 }
 /*---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---TANGRAM---*/
 
 #triangle1{
-	fill: #ff000d; 
-	stroke: #d10000;
-	transform: rotateZ(-45deg);
-	transform: translateY(px);
-	transform: translateX(-100px);
-	animation-name:triangle1;
-	animation-iteration-count: infinite;
-	animation-duration: 4s;
+	fill: #ff000d;/*------------------------------------------------couleur fond*/
+	stroke: #d10000;/*												couleur contour*/
+	animation-name:triangle1;/*-------------------------------------creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;/*							répétition infini*/
+	animation-duration: 10s;/*--------------------------------------temps de l'animation*/
 }
+#triangle2{
+	fill: #207ac9;/*------------------------------------------------couleur fond*/
+	animation-name:triangle2;/*										creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+#triangle3{
+	fill: #207ac9;/*------------------------------------------------couleur fond*/
+	animation-name:triangle3;/*										creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini*/
+	animation-duration: 10s;/*										temps de l'animation*/
+}
+#carré{
+	fill: #f0d105;/*------------------------------------------------couleur fond*/
+	animation-name:carré;/*											creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini*/
+	animation-duration: 10s;/*										temps de l'animation*/
+}
+#triangle4{
+	fill: #02bd53;/*------------------------------------------------couleur fond*/
+	animation-name:triangle4;/*										creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini*/
+	animation-duration: 10s;/*										temps de l'animation*/
+}
+#triangle5{
+	fill: #af09e6;/*------------------------------------------------couleur fond*/
+	animation-name:triangle5;/*										creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini*/
+	animation-duration: 10s;/*										temps de l'animation*/
+}
+#trapèze{
+	fill: #707070;/*------------------------------------------------couleur fond*/
+	animation-name:trapèze;/*										creation nom pour animation avec keyframes*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini*/
+	animation-duration: 10s;/*										temps de l'animation*/
+}
+
 @keyframes triangle1{
 	0%{
 		transform: rotateZ();
@@ -157,137 +191,7 @@ content h1{
 /*---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---*/
 
 
-@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 
-.pacman{
-  margin:40px 10px;
-}
-
-.pacman-top{
-	background-color:yellow;
-	height:25px;
-	width:50px;
-	border-radius:100px 100px 0 0;
-	animation: spin1 0.5s infinite linear;
-}
-
-.pacman-bottom{
-	background-color:yellow;
-	height:25px;
-	width:50px;
-	border-radius:0 0 100px 100px;
-	animation: spin2 0.5s infinite linear;
-}
-
-
-.feed {
-margin-top: -95px;
-margin-left:15px;
-width: 10px;
-height: 10px;
-border-radius: 30%;
--moz-animation: eat 1s linear 0s infinite;
--webkit-animation: eat 1s linear 0s infinite;
-animation: eat 1s linear 0s infinite;
-}   
-
-/* Animation*/
-
-@keyframes spin1 {
-	0%  {transform: rotate(0deg);}
-	50%{transform: rotate(-35deg);}
-  
-}
-@keyframes spin2 {
-	0%  {transform: rotate(0deg);}
-  50%{transform: rotate(35deg);}	
-}
-
-@-moz-keyframes spin1 {
-	0%  {transform: rotate(0deg);}
-	50%{transform: rotate(-35deg);}
-  
-}
-@-moz-keyframes spin2 {
-	0%  {transform: rotate(0deg);}
-  50%{transform: rotate(35deg);}	
-}
-
-@-webkit-keyframes spin1 {
-	0%  {transform: rotate(0deg);}
-	50%{transform: rotate(-35deg);}
-  
-}
-@-webkit-keyframes spin2 {
-	0%  {transform: rotate(0deg);}
-  50%{transform: rotate(35deg);}	
-}
-
-@keyframes eat {
-	0% { box-shadow: 
-      100px 65px 0 0 white, 
-      300px 65px 0 0 white, 
-      500px 65px 0 0 white, 
-      700px 65px 0 0 white,
-      900px 65px 0 0 white, 
-      1100px 65px 0 0 white, 
-      1300px 65px 0 0 white;
-     }
-  
-100% { box-shadow: 
-      0px 65px 0 0 white, 
-      100px 65px 0 0 white,
-      300px 65px 0 0 white, 
-      500px 65px 0 0 white, 
-      700px 65px 0 0 white, 
-      900px 65px 0 0 white, 
-      1100px 65px 0 0 white;}
-}
-}
-
-
-@-moz-keyframes eat {
-	0% { box-shadow: 
-      100px 65px 0 0 white, 
-      300px 65px 0 0 white, 
-      500px 65px 0 0 white, 
-      700px 65px 0 0 white,
-      900px 65px 0 0 white, 
-      1100px 65px 0 0 white, 
-      1300px 65px 0 0 white;}
-  
-100% { box-shadow: 
-      0px 65px 0 0 white, 
-      100px 65px 0 0 white,
-      300px 65px 0 0 white, 
-      500px 65px 0 0 white, 
-      700px 65px 0 0 white, 
-      900px 65px 0 0 white, 
-      1100px 65px 0 0 white;}
-}
-}
-
-
-@-webkit-keyframes eat {
-	0% { box-shadow: 
-      100px 65px 0 0 white, 
-      300px 65px 0 0 white, 
-      500px 65px 0 0 white, 
-      700px 65px 0 0 white,
-      900px 65px 0 0 white, 
-      1100px 65px 0 0 white, 
-      1300px 65px 0 0 white;}
-  
-100% { box-shadow: 
-      0px 65px 0 0 white, 
-      100px 65px 0 0 white,
-      300px 65px 0 0 white, 
-      500px 65px 0 0 white, 
-      700px 65px 0 0 white, 
-      900px 65px 0 0 white, 
-      1100px 65px 0 0 white;}
-}
-}
 
 /*-------------------------------------------COMPETENCES---------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----Compétences----*/
@@ -355,65 +259,65 @@ animation: eat 1s linear 0s infinite;
 .barre_terminal:before{	
 	width: 150px;/*-------------------------------------------------représente mon niveau en terminal*/
 	background-color: #b8b8b8;/*									couleur de fond*/
-	animation-name: ;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	animation-name: ;/*---------------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_terminal:after{
 	width: 150px;/*-------------------------------------------------doit être égal au "before"*/	
 	color: #828282;/*												couleur des hachures*/
-	animation-name: terminalB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	animation-name: terminalB;/*------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_Html:before{	
 	width: 200px;
 	background-color: #FFB258;
-	animation-name: htmlB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	animation-name: htmlB;/*----------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_Html:after{
 	width: 200px;	
-	color: #EA7D00;
-	animation-name: htmlB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	color: #EA7D00;/*												couleur des hachures*/
+	animation-name: htmlB;/*----------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_CSS:before{
 	width: 180px;
 	background-color: #b2dbff;
-	animation-name: cssB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	animation-name: cssB;/*-----------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_CSS:after{
 	width: 180px;
-	color: #0764b5;
-	animation-name: cssB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	color: #0764b5;/*												couleur des hachures*/
+	animation-name: cssB;/*-----------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_JS:before{
 	width: 75px;
 	background-color: #fbff7f;
-	animation-name: jsB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	animation-name: jsB;/*------------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_JS:after{
 	width: 75px;
-	color: #c29200;
-	animation-name: jsB;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
+	color: #c29200;/*												couleur des hachures*/
+	animation-name: jsB;/*------------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-duration: 4s;/*										temps total de l'animation*/
+	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 /*--------------------------------------------EFFET-3D-COMPETENCES-----------------------------------------------------------------------------------------------------------------------------------------*/
 /*--effet 3d sur les barres de compétences--*/
 .grey:before{
-	background : #edf7ff;
-	background : -moz-linear-gradient(top, #edf7ff, #adadad);
-	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edf7ff), to(#adadad));
+	background : #edf7ff;/*couleur fond*/
+	background : -moz-linear-gradient(top, #edf7ff, #adadad);/*pour Mozilla Firefox*/
+	background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(#edf7ff), to(#adadad));/*pour Internet Explorer la Grosse Daube*/
 }
 .orange:before{
 	background :#FFB258;
@@ -460,16 +364,13 @@ animation: eat 1s linear 0s infinite;
 		width: 0%;
 	}
 }
-@keyframes cssB{
-	0%{
-		width: 0%;
+@keyframes cssB{/*------------------------------animation barre de compétences*/
+	0%{/*										position initial à (T = 0s)*/
+		width: 0%;/*----------------------------largeur initial de 0px*/
 	}
-	100%{
-		width: 180px;
+	100%{/*-------------------------------------position fin animation (T = 4s)*/
+		width: 180px;/*							largeur à T = 4s*/
 	}
-	/*100%{
-		width: 0%;
-	}*/
 }
 @keyframes jsB{
 	0%{
@@ -482,7 +383,6 @@ animation: eat 1s linear 0s infinite;
 		width: 0%;
 	}
 }
-/*--fin--anim--*/
 
 /*------------------------------------------------PARCOURS------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--PARCOURS--*/
@@ -573,43 +473,43 @@ section#timeline article div.inner p{
 	color: #656565;/*-------------------------------------------couleur de la police*/
 	border-radius: 0 0 6px 6px;/*								congé BD / BG de 6px*/
 }
-section#timeline article:nth-child(2n+2) div.inner{/*flottant a droite d'un enfant sur 2*/
+section#timeline article:nth-child(2n+2) div.inner{/*-----------flottant a droite d'un enfant sur 2*/
 	float: right;
 }
 section#timeline article:nth-child(2n+2) div.inner h4:after{
 	left: -5px;
 }
-section#timeline article:nth-child(1) div.inner h4{/*couleur de fond de l'enfant 1*/
+section#timeline article:nth-child(1) div.inner h4{/*-----------couleur de fond de l'enfant 1*/
 	background: #7bb7eb;
 }
 section#timeline article:nth-child(1) div.inner h4:after{
 	background: #7bb7eb;
 }
-section#timeline article:nth-child(2) div.inner h4{/*couleur de fond de l'enfant 2*/
+section#timeline article:nth-child(2) div.inner h4{/*-----------couleur de fond de l'enfant 2*/
 	background: #cd9ced;
 }
 section#timeline article:nth-child(2) div.inner h4:after{
 	background: #cd9ced;
 }
-section#timeline article:nth-child(3) div.inner h4{/*couleur de fond de l'enfant 3*/
+section#timeline article:nth-child(3) div.inner h4{/*-----------couleur de fond de l'enfant 3*/
 	background: #8bed92;
 }
 section#timeline article:nth-child(3) div.inner h4:after{
 	background: #8bed92;
 }
-section#timeline article:nth-child(4) div.inner h4{/*couleur de fond de l'enfant 4*/
+section#timeline article:nth-child(4) div.inner h4{/*-----------couleur de fond de l'enfant 4*/
 	background: #7bb7eb;
 }
 section#timeline article:nth-child(4) div.inner h4:after{
 	background: #7bb7eb;
 }
-section#timeline article:nth-child(5) div.inner h4{/*couleur de fond de l'enfant 5*/
+section#timeline article:nth-child(5) div.inner h4{/*-----------couleur de fond de l'enfant 5*/
 	background: #cd9ced;
 }
 section#timeline article:nth-child(5) div.inner h4:after{
 	background: #cd9ced;
 }
-section#timeline article:nth-child(6) div.inner h4{/*couleur de fond de l'enfant 6*/
+section#timeline article:nth-child(6) div.inner h4{/*-----------couleur de fond de l'enfant 6*/
 	background: #8bed92;
 }
 section#timeline article:nth-child(6) div.inner h4:after{
