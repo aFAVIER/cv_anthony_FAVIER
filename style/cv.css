@@ -369,7 +369,6 @@ content h1{
 /*-------------------------------------------ANIMATION----------------------------------------------------------*/
 
 
-
 /*---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---ANIME---*/
 
 
@@ -441,7 +440,7 @@ content h1{
 .barre_terminal:before{	
 	width: 150px;/*-------------------------------------------------représente mon niveau en terminal*/
 	background-color: #b8b8b8;/*									couleur de fond*/
-	animation-name: ;/*---------------------------------------------définition du nom pour l'animation avec keyframes*/
+	animation-name: terminalB ;/*---------------------------------------------définition du nom pour l'animation avec keyframes*/
 	animation-duration: 4s;/*										temps total de l'animation*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
@@ -453,14 +452,14 @@ content h1{
 	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_Html:before{	
-	width: 200px;
+	/*width: 200px;*/
 	background-color: #FFB258;
 	animation-name: htmlB;/*----------------------------------------définition du nom pour l'animation avec keyframes*/
 	animation-duration: 4s;/*										temps total de l'animation*/
 	animation-iteration-count: infinite;/*--------------------------répétition infini de l'animation*/
 }
 .barre_Html:after{
-	width: 200px;	
+	/*width: 200px;*/	
 	color: #EA7D00;/*												couleur des hachures*/
 	animation-name: htmlB;/*----------------------------------------définition du nom pour l'animation avec keyframes*/
 	animation-duration: 4s;/*										temps total de l'animation*/
@@ -523,27 +522,18 @@ content h1{
 
 @keyframes terminalB{
 	0%{
-		/*width: 0;*/
-		transition:;
-	}
-	50%{
-		/*width: 150px;*/
-		transition: ;
+		width: 0;
 	}
 	100%{
-		/*width: 0;*/
-		transition: ;
+		width: 150px;
 	}
 }
-@keyframes {
+@keyframes htmlB{
 	0%{
 		width: 0%;
 	}
-	50%{
-		width: 200px;
-	}
 	100%{
-		width: 0%;
+		width: 200px;
 	}
 }
 @keyframes cssB{/*------------------------------animation barre de compétences*/
@@ -558,11 +548,8 @@ content h1{
 	0%{
 		width: 0%;
 	}
-	50%{
-		width: 75px;
-	}
 	100%{
-		width: 0%;
+		width: 75px;
 	}
 }
 
