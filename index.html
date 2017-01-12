@@ -10,16 +10,26 @@
 	<link href="img/icon.png" rel="shortcup icon">
 </head>
 <body>
+		<svg id='charge' width='80%' height='50%' viewbox='0 0 80% 50%'>
+		<circle id='circle_charge1' cx='20%' cy='50%' r="10" fill="blue"/>
+		<circle id='circle_charge2' cx='35%' cy='50%' r="10" fill="green"/>
+		<circle id='circle_charge3' cx='50%' cy='50%' r="10" fill="yellow"/>
+		<circle id='circle_charge4' cx='65%' cy='50%' r="10" fill="pink"/>
+		<circle id='circle_charge5' cx='80%' cy='50%' r="10" fill="orange"/>
+		<circle id='c_horizon' cx='7%' cy='50%' r="10" fill="black"/>
+		</svg>
+	<figure id="chargement"></figure>
 	<div id="header1">
 		<header>
-
-			<h1>Anthony FAVIER</h1>
-			<div id="header">
+			<h1 id='ANTHONY_TITRE'>Anthony FAVIER</h1>
+			<p onclick="menuHamburger()" class="hamburger">&#9776;</p>
+	<!--<button onclick="menuHamburger()" class="hamburger">&#9776;MENU</button>-->
+			<article id="dropDown" class='menu'>
 				<img id="photo" src="img/photo.jpg">
 				<div id="contact">
 					<div id="gps">
 						<img src="img/gps.png">
-						<p><i><strong>8 rue de l'étang 03110 St Rémy-en-Rollat</strong></i></p>
+						<p><i><strong>8 rue de l'étang 03110 <br/>St Rémy-en-Rollat</strong></i></p>
 					</div>
 					<div id="email">
 						<img src="img/email.png">
@@ -30,7 +40,7 @@
 						<p><i><strong>06-10-26-39-81</strong></i></p>
 					</div>
 				</div>
-			</div>
+			</article>
 			<figure id="tangram"> <!--base en forme de chat-->
 				<svg width="200" height='200' viewBox="0 0 200 200">
 				<path id="triangle1" d='m73 180 v-60 l30 30Z '/>
@@ -48,11 +58,10 @@
 			<img id="angL" src="img/ang.png">
 		</div>
 	</div>
-	<content>
+	<section>
 		<div id="opacity"></div>
-
-	<div id="contenue">
-		<div id="moi">
+		
+		<article id="moi">
 			
 			<h1>A propos de moi</h1>
 			<div id="moi1">
@@ -66,8 +75,8 @@
 				<p class="m1">Assidue</p>
 				<p class="m2">Perfectionniste</p>
 			</div>
-		</div>
-		<div id="compétences">
+		</article>
+		<article id="compétences">
 			<h1>Compétences Web</h1>
 			<ul><strong>
 				<div class="comp">
@@ -109,9 +118,9 @@
 				</div>
 	-->
 			</ul>
-		</div>
+		</article>
 		
-		<div id="Parcours">
+		<article id="Parcours">
 			<h1>Mon parcours</h1>
 			<section id="timeline">
 				<article>
@@ -166,9 +175,9 @@
 					</div>
 				</article>
 			</section>
-		</div>
+		</article>
 	
-		<div id="Logiciels">
+		<article id="Logiciels">
 			<h1>Logiciels</h1>
 				<div id="logic">
 					<div class="logi">
@@ -192,9 +201,9 @@
 						<p>Gimp</p>
 					</div>
 				</div>
-		</div>
+		</article>
 	
-		<div id="interet">
+		<article id="interet">
 			<h1>Centre d'intérêt</h1>
 			<div id="hobbies">
 				<div class="logi">
@@ -222,9 +231,9 @@
 					<p>PIANO</p>
 				</div>
 			</div>
-		</div>
-	</div>
-	</content>
-<script type="text/javascript" rel="script/cv.js"></script>
+		</article>
+	
+	</section>
+<script type="text/javascript" src="script/cv.js"></script>
 </body>
 </html>

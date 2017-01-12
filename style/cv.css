@@ -1,7 +1,152 @@
-/*----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
-MOBILE-FIRST--------MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
-MOBILE-FIRST--------MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
-MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
+/*-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----
+MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----
+MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----MOBILE-FIRST-PORTRAIT-----*/
+
+@media only screen and (max-width : 320px) {
+
+body{
+	margin: 0;
+}
+#chargement{/*----------------------------------page de chargement*/
+	content: '';/*								contenu vide*/
+	z-index: 100;/*-----------------------------visibilité et position au max*/
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0, 0, 0);/*-----------couleur et opacité*/
+	margin: 0;
+	display: block;
+	opacity: 1;
+	animation: chargement 10s forwards;
+}
+/*-----------------Animation-----------------------------*/
+@keyframes chargement{
+	20%{
+		display: none;
+		opacity: 0.5;
+	}
+	100%{
+		display: none;
+		opacity: 0;
+	}
+}
+/*------------------SVG CHARGEMENT-------------------*/
+#charge{
+	position: fixed;
+	/*background-color: red;*/
+	margin: 45% 10%;
+	opacity: 1;
+	animation: charge 10s forwards;
+}
+/*-----------------Animation-----------------------------*/
+@keyframes charge{
+	50%{
+		display: none;
+		opacity: 1;
+	}
+	100%{
+		display: none;
+		opacity: 0;
+	}
+}
+/*-------------------------------------------------------*/
+#c_horizon{
+	animation : c_h 2s infinite;
+}
+/*-----------------Animation-----------------------------*/
+@keyframes c_h{
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(220px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+/*-------------------------------------------------------*/
+#circle_charge1{
+	animation : cc1 2s infinite;
+}
+/*-----------------Animation-----------------------------*/
+/*@keyframes cc1{
+	0%{
+		transform: translateY(0);
+	}
+	20%{
+		transform: translateY(-40px);
+	}
+	50%{
+		transform: translateY(0);
+	}
+	80%{
+		transform: translateY(-40px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}*/
+/*-------------------------------------------------------*/
+#circle_charge2{
+	animation : cc2 2s infinite;
+}
+/*-----------------Animation-----------------------------*/
+
+/*-------------------------------------------------------*/
+#circle_charge3{
+	animation : cc3 2s infinite;
+}
+/*-----------------Animation-----------------------------*/
+
+/*-------------------------------------------------------*/
+#circle_charge4{
+	animation : cc4 2s infinite;
+}
+/*-----------------Animation-----------------------------*/
+
+/*-------------------------------------------------------*/
+#circle_charge5{
+	animation : cc5 2s infinite;
+}
+/*-----------------Animation-----------------------------*/
+
+/*-------------------------------------------------------*/
+header{
+margin: 0;
+padding: 0;
+}
+#ANTHONY_TITRE{
+	position: fixed;
+	z-index: 50;
+	width: 100%;
+	/*background-color: red;/*					couleur test*/
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	border-radius: 0 0 20px 20px;
+}
+h1{
+	font-family: sans-serif;
+	text-align: center;
+	text-shadow: 2px 2px grey;
+}
+#header1{
+}	
+#photo{
+	border-radius: 50%;
+	width: 100px;
+}
+#contact img{
+	width: 25px;
+}
+
+}
+/*-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----
+MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----
+MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----MOBILE-FIRST-PAYSAGE-----*/
+@media only screen and (min-width : 321px) {
+
 body{
 	background-color: #ebebeb;/*									couleur de fond*/
 	margin: 0;/*----------------------------------------------------marge ext 0*/
@@ -18,29 +163,45 @@ header{
 	border-radius: 0 0 20px 20px;/*									arrondir les angles BD et BG du header */
 	border: 2px solid black;/*--------------------------------------bordure du cadre*/
 }
-#header{
-	display: flex;/*------------------------------------------------positionnement des éléments du header*/
-	align-items: center;/*											centrer le texte par rapport a la photo*/
-}
 h1{
 	text-align: center; /*											centrer Anthony FAVIER*/
 	text-shadow: 4px 4px 4px grey;/*--------------------------------ombre du texte*/
 	font-family: sans-serif;/*										police du texte h1*/
 	font-size: 2.5em;/*---------------------------------------------taille écriture*/
+	margin: 0;
 }
+.hamburger{
+	float: right;/*---------------------------------objet flottant en haut à droite*/
+	margin: -40px 5px 0 0;
+
+}
+#dropDown{
+	display: flex;/*------------------------------------------------positionnement des éléments du header*/
+	align-items: center;/*											centrer le texte par rapport a la photo*/
+	/*display: none;/*--------------------------------pour cacher le menu par défaut*/
+	/*position: absolute;/*							position par rapport au parent*/
+	
+}
+
 #photo{
-	height: 250px;/*												hauteur de la photo à 250px*/
-	width: 250px;/*-------------------------------------------------largeur de la photo à 250px*/
+	height: 200px;/*												hauteur de la photo à 250px*/
+	width: 200px;/*-------------------------------------------------largeur de la photo à 250px*/
 	border-radius: 50%;/*											image ronde*/
 	box-shadow: 4px 4px 10px black;/*-------------------------------ombrage de la photo*/
 	margin-left: 10px;/*											marge gauche*/
 	margin-bottom: 10px;/*------------------------------------------marge bas*/
+
+}
+#contact{
+	display: block;
+	padding-bottom: 40px;
 }
 #gps, #email, #tel{
 	display: flex;/*												aligner les images avec texte dans chaque id*/
 	justify-content: center;/*--------------------------------------centre les éléments sur l'axe des x*/
 	align-items: center;/*											centre le texte avec les icons*/
-	margin: 15px; /*------------------------------------------------petite marge pour écarter de la photo*/
+	margin: 0; /*------------------------------------------------petite marge pour écarter de la photo*/
+	padding-left: 15px;
 }
 
 #gps img, #email img, #tel img{ /*----------------------------------redimensionnement des icons*/
@@ -52,6 +213,8 @@ header p{
 	margin-left: 5px;/*---------------------------------------------espace le texte des icons de 5px*/
 	font-family: sans-serif;/*										police d'écriture*/
 	font-size: 1.3em;/*---------------------------------------------taille du texte du header*/
+	margin:5px;
+	z-index: 50;
 }
 #lang img{
 	width: 50px;/*--------------------------------------------------largeur image 50% de la taille réel*/
@@ -66,6 +229,7 @@ header p{
 	justify-content: center;/*--------------------------------------centrer axe des X*/
 	align-items: center;/*											centrer axe des Y*/
 	margin-top: -19px;/*--------------------------------------------remonte les img pour centrer avec la bordure*/
+ 	margin-right: -50px;
 	/*margin-top: 336px;*/
 }
 
@@ -285,6 +449,7 @@ header p{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position statique*/
 	}
 }
+
 @keyframes triangle5{/*----------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
@@ -314,15 +479,15 @@ header p{
 }
 /*---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---*/
 
-content{
+section{
 	position: absolute;/*-------------------------------------------position du block*/
 	width: 100%;/*													largeur max du block*/
-	top: 350px;/*---------------------------------------------------position du blok Content par rapport au Header*/
+	top: 250px;/*---------------------------------------------------position du blok Content par rapport au Header*/
 	background-image: url(https://images4.alphacoders.com/266/thumb-1920-266678.jpg);
 	background-attachment: fixed;/*---------------------------------empêche l'arrière plan de bouger lors du scroll*/
 	z-index: -2;/*--------------------------------------------------position en arrière plan*/
 }
-content h1{
+section h1{
 	margin-top: 60px;
 }
 #opacity{
@@ -341,7 +506,7 @@ content h1{
 }
 #moi h1{
 	text-align: center;/*											centrer le titre en X*/
-	margin-top: 50px;/*---------------------------------------------marge du haut*/
+	margin-top: 70px;/*---------------------------------------------marge du haut*/
 }
 #moi p{
 	display: flex;/*------------------------------------------------comportement*/
@@ -702,6 +867,11 @@ section#timeline article:nth-child(6) div.inner h4:after{
 	text-shadow: 1px 1px 2px grey;
 }
 
+
+
+
+
+}
 
 
 /*----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----LARGE-SCREEN----
