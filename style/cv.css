@@ -299,13 +299,13 @@ content h1{
 	margin-top: -10px;/*--------------------------------------------diminution de la marge haute*/
 }
 .m1{
-	background-color: #7bb7eb;
+	background-color: rgba(0, 136, 255, 0.4);
 }
 .m2{
-	background-color: #cd9ced;
+	background-color: rgba(205, 156, 237, 0.4);
 }
 .m3{
-	background-color: #8bed92;
+	background-color: rgba(139, 347, 146, 0.4);
 }
 
 /*-------------------------------------------ANIMATION----------------------------------------------------------*/
@@ -466,15 +466,15 @@ content h1{
 @keyframes terminalB{
 	0%{
 		/*width: 0;*/
-		transform: rotateY(0deg);
+		transition:;
 	}
 	50%{
 		/*width: 150px;*/
-		transform: rotateY(360deg);
+		transition: ;
 	}
 	100%{
 		/*width: 0;*/
-		transform: rotateY(0deg);
+		transition: ;
 	}
 }
 @keyframes {
@@ -604,40 +604,40 @@ section#timeline article:nth-child(2n+2) div.inner h4:after{
 	left: -5px;
 }
 section#timeline article:nth-child(1) div.inner h4{/*-----------couleur de fond de l'enfant 1*/
-	background: #7bb7eb;
+	background: rgba(0, 136, 255, 0.4);
 }
 section#timeline article:nth-child(1) div.inner h4:after{
-	background: #7bb7eb;
+	background: rgba(0, 136, 255, 0.4);
 }
 section#timeline article:nth-child(2) div.inner h4{/*-----------couleur de fond de l'enfant 2*/
-	background: #cd9ced;
+	background: rgba(205, 156, 237, 0.4);
 }
 section#timeline article:nth-child(2) div.inner h4:after{
-	background: #cd9ced;
+	background: rgba(205, 156, 237, 0.4);
 }
 section#timeline article:nth-child(3) div.inner h4{/*-----------couleur de fond de l'enfant 3*/
-	background: #8bed92;
+	background: rgba(139, 347, 146, 0.4);
 }
 section#timeline article:nth-child(3) div.inner h4:after{
-	background: #8bed92;
+	background: rgba(139, 347, 146, 0.4);
 }
 section#timeline article:nth-child(4) div.inner h4{/*-----------couleur de fond de l'enfant 4*/
-	background: #7bb7eb;
+	background: rgba(0, 136, 255, 0.4);
 }
 section#timeline article:nth-child(4) div.inner h4:after{
-	background: #7bb7eb;
+	background: rgba(0, 136, 255, 0.4);
 }
 section#timeline article:nth-child(5) div.inner h4{/*-----------couleur de fond de l'enfant 5*/
-	background: #cd9ced;
+	background: rgba(205, 156, 237, 0.4);
 }
 section#timeline article:nth-child(5) div.inner h4:after{
-	background: #cd9ced;
+	background: rgba(205, 156, 237, 0.4);
 }
 section#timeline article:nth-child(6) div.inner h4{/*-----------couleur de fond de l'enfant 6*/
-	background: #8bed92;
+	background: rgba(139, 347, 146, 0.4);
 }
 section#timeline article:nth-child(6) div.inner h4:after{
-	background: #8bed92;
+	background: rgba(139, 347, 146, 0.4);
 }
 
 /*------------------------------------------LOGICIELS--------HOBBIES--------------------------------------------------------------------------------------------------------------------------------------------*/
