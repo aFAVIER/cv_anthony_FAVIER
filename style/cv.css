@@ -127,13 +127,23 @@ header p{
 	0%{
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position à T=0s*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
-		transform: rotateZ(45deg) translateX(120px) translateY(-99px);/*	*/
+	18%{
+		transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-15px) translateY(84px);
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
-		transform: rotateZ(45deg) translateX(120px) translateY(-99px);/*	*/
+	38%{
+		transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-15px) translateY(84px);
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
+	50%{/*------------------------------------------------------------------position T = 3s*/
+		transform-origin: bottom left;
+		transform: rotateZ(45deg) translateX(14px) translateY(5px);/*	*/
+	}
+	70%{/*------------------------------------------------------------------position T = 6s*/
+		transform-origin: bottom left;
+		transform: rotateZ(45deg) translateX(14px) translateY(5px);/*	*/
+	}*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*-----revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
@@ -144,15 +154,23 @@ header p{
 	0%{
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position à T=0s*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
+	18%{	
+		transform-origin: bottom left;
+		transform: rotateZ(-135deg) translateX(-15px) translateY(35px);
+	}
+	38%{
+		transform-origin: bottom left;
+		transform: rotateZ(-135deg) translateX(-15px) translateY(35px);
+	}
+	50%{/*------------------------------------------------------------------position T = 3s*/
 		transform-origin: bottom left;/*------------------------------------modification du point d'origine pour effectuer les translation et rotation*/
 		transform: rotateZ(315deg) translateX(33px) translateY(10px);/*		mouvement à effectuer*/
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
+	70%{/*------------------------------------------------------------------position T = 6s*/
 		transform-origin: bottom left;
 		transform: rotateZ(315deg) translateX(33px) translateY(10px);/*		mouvement à effectuer*/
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
@@ -163,15 +181,23 @@ header p{
 	0%{
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position à T=0s*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
+	18%{
+		transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-22px) translateY(75px);
+	}
+	38%{
+		transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-22px) translateY(75px);
+	}
+	50%{/*------------------------------------------------------------------position T = 3s*/
 		transform-origin: bottom left;
 		transform: rotateZ(0) translateX(18px) translateY(-1px);/*			mouvement à effectuer*/
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
+	70%{/*------------------------------------------------------------------position T = 6s*/
 		transform-origin: bottom left;
 		transform: rotateZ(0) translateX(18px) translateY(-1px);/*			mouvement à effectuer*/
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
@@ -182,15 +208,23 @@ header p{
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*			*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
+	18%{
+		transform-origin: bottom left;
+		transform: rotateZ(-45deg) translateX(40px) translateY(40px);
+	}
+	38%{
+		transform-origin: bottom left;
+		transform: rotateZ(-45deg) translateX(40px) translateY(40px);
+	}
+	50%{/*------------------------------------------------------------------position T = 3s*/
 		transform-origin: bottom left;
 		transform: rotateZ(45deg) translateX(-41px) translateY(40px);/*		mouvement à effectuer*/
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
+	70%{/*------------------------------------------------------------------position T = 6s*/
 		transform-origin: bottom left;
 		transform: rotateZ(45deg) translateX(-41px) translateY(40px);/*		mouvement à effectuer*/
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) translateX(0) translateY(0);/*				revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
@@ -201,16 +235,24 @@ header p{
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
+	18%{
+		transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-40px) translateY(13px);
+	}
+	38%{
+			transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-40px) translateY(13px);
+	}
+	50%{/*------------------------------------------------------------------position T = 3s*/
 		transform-origin: bottom left;
 		transform:  rotateZ(0deg) translateX(18px) translateY(-2px);/*		mouvement à effectuer*/
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
+	70%{/*------------------------------------------------------------------position T = 6s*/
 		transform-origin: bottom left;
 		transform: rotateZ(0deg) translateX(18px) translateY(-2px);/*		mouvement à effectuer*/
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
-		transform: rotateZ(0)  translateX(0) translateY(0);/*				revient position initial*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
+	/*	transform: rotateZ(0)  translateX(0) translateY(0);/*				revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0)  translateX(0) translateY(0);/*				position statique*/
@@ -220,15 +262,23 @@ header p{
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
+	18%{
+		transform-origin: bottom left;
+		transform: rotateZ(180deg) translateX(18px) translateY(-10px);
+	}
+	38%{
+		transform-origin: bottom left;
+		transform: rotateZ(180deg) translateX(18px) translateY(-10px);
+	}
+	50%{/*------------------------------------------------------------------position T = 3s*/
 		transform-origin: bottom left;
 		transform:  rotateZ(180deg) translateX(-16px) translateY(31px);/*	mouvement à effectuer*/
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
+	70%{/*------------------------------------------------------------------position T = 6s*/
 		transform-origin: bottom left;
 		transform:  rotateZ(180deg) translateX(-16px) translateY(31px);/*	mouvement à effectuer*/
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0)  translateX(0) translateY(0);/*				revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
@@ -239,15 +289,23 @@ header p{
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
 	}
-	30%{/*------------------------------------------------------------------position T = 3s*/
+	18%{
+		transform-origin: bottom left;
+		transform: rotateZ(180deg) translateX(-15px) translateY(-10px);
+	}
+	38%{
+		transform-origin: bottom left;
+		transform: rotateZ(180deg) translateX(-15px) translateY(-10px);
+	}
+	50%{/*------------------------------------------------------------------position T = 3s*/
 		transform-origin: bottom left;
 		transform:  rotateZ(-180deg) translateX(-50px) translateY(31px);/*	mouvement à effectuer*/
 	}
-	60%{/*------------------------------------------------------------------position T = 6s*/
+	70%{/*------------------------------------------------------------------position T = 6s*/
 		transform-origin: bottom left;
 		transform: rotateZ(-180deg) translateX(-50px) translateY(31px);/*	mouvement à effectuer*/
 	}
-	80%{/*------------------------------------------------------------------position T = 8s*/
+	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		revient position initial*/
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
