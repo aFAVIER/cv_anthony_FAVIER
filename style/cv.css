@@ -882,7 +882,9 @@ h1{
 	color: blue;
 	margin-bottom: 20px;
 }
-
+section{
+	background-attachment: fixed;
+}
 
 }
 /*----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----
