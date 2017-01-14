@@ -1,4 +1,7 @@
-CV Anthony FAVIER
+							**CV Anthony FAVIER**
+							---------------------
+EN CONSTRUCTION
+---------------
 
 Faire un cv en Mobile First. 
 Surtout visuel, donc peut de texte / grandes phrases.
