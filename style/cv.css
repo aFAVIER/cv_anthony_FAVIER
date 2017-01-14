@@ -290,55 +290,63 @@ header p{
 @keyframes triangle1{/*-----------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position à T=0s*/
+		-webkit-transform: rotateZ(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) translateX(0) translateY(0);
 	}
 	18%{
-		transform-origin: bottom left;
-		transform: rotateZ(-90deg) translateX(-15px) translateY(84px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-15px) translateY(84px); -webkit-transform: rotateZ(-90deg) translateX(-15px) translateY(84px);-moz-transform: rotateZ(-90deg) translateX(-15px) translateY(84px);
 	}
 	38%{
-		transform-origin: bottom left;
-		transform: rotateZ(-90deg) translateX(-15px) translateY(84px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-15px) translateY(84px);-webkit-transform: rotateZ(-90deg) translateX(-15px) translateY(84px);-moz-transform: rotateZ(-90deg) translateX(-15px) translateY(84px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;
-		transform: rotateZ(45deg) translateX(14px) translateY(5px);/*	*/
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(45deg) translateX(14px) translateY(5px);-webkit-transform: rotateZ(45deg) translateX(14px) translateY(5px);-moz-transform: rotateZ(45deg) translateX(14px) translateY(5px);/*	*/
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
-		transform: rotateZ(45deg) translateX(14px) translateY(5px);/*	*/
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(45deg) translateX(14px) translateY(5px);-webkit-transform: rotateZ(45deg) translateX(14px) translateY(5px);-moz-transform: rotateZ(45deg) translateX(14px) translateY(5px);/*	*/
 	}*/
 	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*-----revient position initial*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position statique*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 }
 @keyframes triangle2{/*-----------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position à T=0s*/
+		-webkit-transform: rotateZ(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) translateX(0) translateY(0);
 	}
 	18%{	
-		transform-origin: bottom left;
-		transform: rotateZ(-135deg) translateX(-15px) translateY(35px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-135deg) translateX(-15px) translateY(35px);-webkit-transform: rotateZ(-135deg) translateX(-15px) translateY(35px);-moz-transform: rotateZ(-135deg) translateX(-15px) translateY(35px);
 	}
 	38%{
-		transform-origin: bottom left;
-		transform: rotateZ(-135deg) translateX(-15px) translateY(35px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-135deg) translateX(-15px) translateY(35px);-webkit-transform: rotateZ(-135deg) translateX(-15px) translateY(35px);-moz-transform: rotateZ(-135deg) translateX(-15px) translateY(35px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;/*------------------------------------modification du point d'origine pour effectuer les translation et rotation*/
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;/*------------------------------------modification du point d'origine pour effectuer les translation et rotation*/
 		transform: rotateZ(315deg) translateX(33px) translateY(10px);/*		mouvement à effectuer*/
+		-webkit-transform: rotateZ(315deg) translateX(33px) translateY(10px);-moz-transform: rotateZ(315deg) translateX(33px) translateY(10px);
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(315deg) translateX(33px) translateY(10px);/*		mouvement à effectuer*/
+		-webkit-transform: rotateZ(315deg) translateX(33px) translateY(10px);-moz-transform: rotateZ(315deg) translateX(33px) translateY(10px);
 	}
 	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		revient position initial*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position statique*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 }
 @keyframes triangle3{/*-----------------------------------------------------animation du svg*/
@@ -346,135 +354,165 @@ header p{
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position à T=0s*/
 	}
 	18%{
-		transform-origin: bottom left;
-		transform: rotateZ(-90deg) translateX(-22px) translateY(75px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-22px) translateY(75px);-webkit-transform: rotateZ(-90deg) translateX(-22px) translateY(75px);-moz-transform: rotateZ(-90deg) translateX(-22px) translateY(75px);
 	}
 	38%{
-		transform-origin: bottom left;
-		transform: rotateZ(-90deg) translateX(-22px) translateY(75px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-90deg) translateX(-22px) translateY(75px);-webkit-transform: rotateZ(-90deg) translateX(-22px) translateY(75px);-moz-transform: rotateZ(-90deg) translateX(-22px) translateY(75px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(0) translateX(18px) translateY(-1px);/*			mouvement à effectuer*/
+		-webkit-transform: rotateZ(0) translateX(18px) translateY(-1px);-moz-transform: rotateZ(0) translateX(18px) translateY(-1px);
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(0) translateX(18px) translateY(-1px);/*			mouvement à effectuer*/
+		-webkit-transform: rotateZ(0) translateX(18px) translateY(-1px);-moz-transform: rotateZ(0) translateX(18px) translateY(-1px);
 	}
 	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		revient position initial*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position statique*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 }
 @keyframes trapèze{/*-------------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*			*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	18%{
-		transform-origin: bottom left;
-		transform: rotateZ(-45deg) translateX(40px) translateY(40px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-45deg) translateX(40px) translateY(40px);-webkit-transform: rotateZ(-45deg) translateX(40px) translateY(40px);-moz-transform: rotateZ(-45deg) translateX(40px) translateY(40px);
 	}
 	38%{
-		transform-origin: bottom left;
-		transform: rotateZ(-45deg) translateX(40px) translateY(40px);
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
+		transform: rotateZ(-45deg) translateX(40px) translateY(40px);-webkit-transform: rotateZ(-45deg) translateX(40px) translateY(40px);-moz-transform: rotateZ(-45deg) translateX(40px) translateY(40px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(45deg) translateX(-41px) translateY(40px);/*		mouvement à effectuer*/
+		-webkit-transform: rotateZ(45deg) translateX(-41px) translateY(40px);-moz-transform: rotateZ(45deg) translateX(-41px) translateY(40px);
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(45deg) translateX(-41px) translateY(40px);/*		mouvement à effectuer*/
+		-webkit-transform: rotateZ(45deg) translateX(-41px) translateY(40px);-moz-transform: rotateZ(45deg) translateX(-41px) translateY(40px);
 	}
 	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) translateX(0) translateY(0);/*				revient position initial*/
+	-webkit-transform: rotateZ(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0) translateX(0) translateY(0);/*				position statique*/
+	-webkit-transform: rotateZ(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) translateX(0) translateY(0);
 	}
 }
 @keyframes carré{/*---------------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	18%{
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(-90deg) translateX(-40px) translateY(13px);
+		-webkit-transform: rotateZ(-90deg) translateX(-40px) translateY(13px);-moz-transform: rotateZ(-90deg) translateX(-40px) translateY(13px);
 	}
 	38%{
-			transform-origin: bottom left;
+			transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(-90deg) translateX(-40px) translateY(13px);
+		-webkit-transform: rotateZ(-90deg) translateX(-40px) translateY(13px);-moz-transform: rotateZ(-90deg) translateX(-40px) translateY(13px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform:  rotateZ(0deg) translateX(18px) translateY(-2px);/*		mouvement à effectuer*/
+		-webkit-transform:  rotateZ(0deg) translateX(18px) translateY(-2px);-moz-transform:  rotateZ(0deg) translateX(18px) translateY(-2px);
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(0deg) translateX(18px) translateY(-2px);/*		mouvement à effectuer*/
+		-webkit-transform:  rotateZ(0deg) translateX(18px) translateY(-2px);-moz-transform:  rotateZ(0deg) translateX(18px) translateY(-2px);
 	}
 	85%{/*------------------------------------------------------------------position T = 8s*/
-	/*	transform: rotateZ(0)  translateX(0) translateY(0);/*				revient position initial*/
+		transform: rotateZ(0)  translateX(0) translateY(0);/*				revient position initial*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0)  translateX(0) translateY(0);/*				position statique*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 }
 @keyframes triangle4{/*-----------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	18%{
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(180deg) translateX(18px) translateY(-10px);
+		-webkit-transform: rotateZ(180deg) translateX(18px) translateY(-10px);-moz-transform: rotateZ(180deg) translateX(18px) translateY(-10px);
 	}
 	38%{
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(180deg) translateX(18px) translateY(-10px);
+		-webkit-transform: rotateZ(180deg) translateX(18px) translateY(-10px);-moz-transform: rotateZ(180deg) translateX(18px) translateY(-10px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform:  rotateZ(180deg) translateX(-16px) translateY(31px);/*	mouvement à effectuer*/
+		-webkit-transform:  rotateZ(180deg) translateX(-16px) translateY(31px);-moz-transform:  rotateZ(180deg) translateX(-16px) translateY(31px);
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform:  rotateZ(180deg) translateX(-16px) translateY(31px);/*	mouvement à effectuer*/
+		-webkit-transform:  rotateZ(180deg) translateX(-16px) translateY(31px);-moz-transform:  rotateZ(180deg) translateX(-16px) translateY(31px);
 	}
 	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0)  translateX(0) translateY(0);/*				revient position initial*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position statique*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 }
 
 @keyframes triangle5{/*----------------------------------------------------animation du svg*/
 	0%{
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position à T=0s*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	18%{
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(180deg) translateX(-15px) translateY(-10px);
+		-webkit-transform: rotateZ(180deg) translateX(-15px) translateY(-10px);-moz-transform: rotateZ(180deg) translateX(-15px) translateY(-10px);
 	}
 	38%{
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(180deg) translateX(-15px) translateY(-10px);
+		-webkit-transform: rotateZ(180deg) translateX(-15px) translateY(-10px);-moz-transform: rotateZ(180deg) translateX(-15px) translateY(-10px);
 	}
 	50%{/*------------------------------------------------------------------position T = 3s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform:  rotateZ(-180deg) translateX(-50px) translateY(31px);/*	mouvement à effectuer*/
+		-webkit-transform:  rotateZ(-180deg) translateX(-50px) translateY(31px);-moz-transform:  rotateZ(-180deg) translateX(-50px) translateY(31px);
 	}
 	70%{/*------------------------------------------------------------------position T = 6s*/
-		transform-origin: bottom left;
+		transform-origin: bottom left;-webkit-transform-origin: bottom left;-moz-transform-origin: bottom left;
 		transform: rotateZ(-180deg) translateX(-50px) translateY(31px);/*	mouvement à effectuer*/
+		-webkit-transform:  rotateZ(-180deg) translateX(-50px) translateY(31px);-moz-transform:  rotateZ(-180deg) translateX(-50px) translateY(31px);
 	}
 	85%{/*------------------------------------------------------------------position T = 8s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		revient position initial*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 	100%{/*-----------------------------------------------------------------position T = 10s*/
 		transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);/*		position statique*/
+		-webkit-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);-moz-transform: rotateZ(0) rotateX(0) translateX(0) translateY(0);
 	}
 }
 /*---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---SECTION---*/
@@ -883,9 +921,7 @@ h1{
 	margin-bottom: 20px;
 }
 section{
-	background-attachment: fixed;
-	-webkit-background-attachment: fixed;
-	-moz-background-attachment: fixed;
+	background-attachment: fixed;-webkit-background-attachment: fixed;-moz-background-attachment: fixed;-o-background-attachment: fixed;
 }
 
 }
@@ -894,28 +930,41 @@ LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----
 LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----LAPTOP----*/
 @media (min-width: 1124px){
 
-h1{
-	color: yellow;
-}
-
-
-
 /*////////*/	
-#photo{
+#photo {
 	height: 200px;
 	width: 200px;
 	border-radius: 20px;
+	float: left;
+	margin: 5px;
+	margin-top: -60px;
+
 }
 #header1{
-	width: 750px;
 	height: 250px;
 }
-
+#contact{
+	display: flex;
+	justify-content: center;
+}
+#lang{
+	display: none;
+}
 #contenue{
 	display: flex;
 }
+section{
+	top: 200px;
+}
+#part_1{
+	display: flex;
+	justify-content: center;
 
-h1{
-	color: red;/*test pour la largeur 750px du Mobile First*/
+}
+#moi{
+	flex: 1 1 auto;
+}
+#compétences{
+	flex: 1 1 auto;
 }
 }
